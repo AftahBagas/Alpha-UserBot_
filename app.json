@@ -1,0 +1,139 @@
+{
+  "name": "Alpha UserBot",
+  "description": "Alpha Userbot Userbot Telethon Telegram",
+  "logo": "",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/AftahBagas/Alpha-Userbot",
+  "telegram": "https://t.me/kanjengingsun",
+  "success_url": "https://t.me/kanjengingsun",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Dapatkan Api Key di web my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan Api Hash Di Web my.telegram.org.",
+      "required": true
+    },
+     "STRING_SESSION": {
+      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya @Kanjengingsun di telegram",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
+      "value": "Check Di Heroku Dashboard Mu",
+      "required": true
+    },
+    "BOTLOG": {
+      "description": "Kalo Mau Off in BOTLOG Ganti False",
+      "value": "True",
+      "required": true
+    },
+    "BOTLOG_CHATID": {
+      "description": "Buatlah sebuah grup private/public masukan bot rose lalu ketik /id.",
+      "value": "Isi id grup mu",
+      "required": true
+    },
+    "QUOTES_API_TOKEN": {
+      "description": "Dapatkan Token Dari http://antiddos.systems",
+      "value": "33273f18-4a0d-4a76-8d78-a16faa002375",
+      "required": true
+    },
+    "COUNTRY": {
+      "description": "Set your Country to be used in the .time and .date commands.",
+      "value": "ID",
+      "required": true
+    },
+    "PM_AUTO_BAN": {
+      "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module.",
+      "value": "False",
+      "required": true
+    },
+    "YOUTUBE_API_KEY": {
+      "description": "YouTube Data API Key for .yt command. Get from https://console.cloud.google.com",
+      "value": "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg",
+      "required": true
+    },
+    "OCR_SPACE_API_KEY": {
+      "description": "OCR API Key for .ocr command. Get from https://ocr.space/ocrapi",
+      "value": "0c2078b99188957",
+      "required": true
+    },
+    "REM_BG_API_KEY": {
+      "description": "API Key for .rbg command. Get from https://www.remove.bg/api",
+      "value": "GPLyodhzj3uY2fnJbSsnKek8",
+      "required": true
+    },
+    "HEROKU_MEMEZ": {
+      "description": "This should be True if the userbot is running on a Heroku Dyno.",
+      "value": "True",
+      "required": true
+    },
+    "DEFAULT_BIO": {
+      "description": "Default Bio Mu.",
+      "value": "Alpha UserBot",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Nama untuk menunjukan pesan .alive",
+      "required": false
+    },
+    "S_PACK_NAME": {
+      "description": "Nama Sticker Pack Mu",
+      "required": false
+    },
+    "G_BAN_LOGGER_GROUP": {
+      "description": "Buatlah Sebuah Grup Private/Public Lalu Masukkan Bot Rose Lalu Ketik /id.",
+      "value": "Isi id grup mu",
+      "required": false
+    },
+    "UB_BLACK_LIST_CHAT": {
+      "description": "Isi Apa Aja",
+      "required": false
+    },
+    "WEATHER_DEFCITY": {
+      "description": "Set the default city for the userbot's weather module.",
+      "value": "Pati",
+      "required": false
+    },
+    "LOGSPAMMER": {
+      "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
+      "value": "True",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Set this to enable inline bot helper. get the token from @BotFather",
+      "required": false
+    },
+    "BOT_USERNAME": {
+      "description": "Username of the bot you created with @BotFather",
+      "required": false
+    },
+    "LANGUAGE": {
+      "description": "Bahasa userbot.............",
+      "value": "EN",
+      "required": true
+     }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql"
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  },{
+    "url": "heroku-community/apt"
+    }]
+}
