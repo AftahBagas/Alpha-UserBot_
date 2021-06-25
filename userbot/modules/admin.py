@@ -1122,7 +1122,7 @@ async def Warn_Gban(event, warn, user, reason = None):
                 f"CHAT: {event.chat.title}(`{event.chat_id}`)")
     warn.toplu_sil_warn(user.id)
 
-@register(outgoing=True, pattern="^.usersdel ?(.*)")
+@alfareza(outgoing=True, pattern="^.usersdel ?(.*)")
 async def get_usersdel(show):
     """ .usersdel perintah menunjukkan akun yang dihapus dalam grup """
     info = await show.client.get_entity(show.chat_id)
@@ -1212,7 +1212,7 @@ async def get_userdel_from_id(user, event):
     return user_obj
 
 
-@register(outgoing=True, pattern="^.bots$", groups_only=True)
+@alfareza(outgoing=True, pattern="^.bots$", groups_only=True)
 async def get_bots(show):
     """ .bots perintah mencantumkan bot yang termasuk dalam grup """
     info = await show.client.get_entity(show.chat_id)
