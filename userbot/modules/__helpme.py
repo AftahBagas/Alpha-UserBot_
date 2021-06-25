@@ -9,7 +9,7 @@ LANG = get_value("__helpme")
 
 # ████████████████████████████████ #
 
-@alphabot(outgoing=True, pattern="^.help")
+@alphabot(outgoing=True, pattern="^.helpme")
 async def yardim(event):
     tgbotusername = BOT_USERNAME
     if tgbotusername is not None:
