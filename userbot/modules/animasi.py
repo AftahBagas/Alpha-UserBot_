@@ -953,7 +953,7 @@ async def typewriter(typew):
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
 
 
-CmdHelp ('alphakata').add_command( 'voff', None, 'Tampilan Fuck you.' 
+CmdHelp ('animasi').add_command( 'voff', None, 'Tampilan Fuck you.' 
     ).add_command( 'ngabuburit', None, 'ngabuburit gabut.' 
     ).add_command( 'raziamasker', None, 'Razia masker loh.' 
     ).add_command( 'yang', None, 'Sayang apa kabarmu.' 
